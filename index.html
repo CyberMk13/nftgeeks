@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NftGeeks</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="geeks.css">
+</head>
+<body onload="showModal()">
+
+
+
+	<section class="land-pg">
+		<div id="modalbox">
+			<img src="23181624_6732836.jpg" class="cookies">
+			<p>We use cookies to improve user experience on our site.</p>
+			<button type="button" onclick="closeModal()">Accept</button>
+			<img src="close.png" class="close" onclick="closeModal()">
+		</div>
+
+
+
+		<div class="nav-tab">
+			<nav>
+				<div class="logo-wrap">
+					<img class="menu-icons" src="menu.png" onclick="showMenu()">
+				<a href="index.html"><img class="logo" src="Picsart_23-06-18_19-12-00-677.png"></a>
+				</div>
+				<div class="nav-links" id="navLinks">
+					<img class="menu-icons" src="close.png" onclick="hideMenu()">
+					<ul>
+						<li><a href="#home", href="index.html">Home</a></li>
+						<li><a href="#market">Marketplace</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Help</a></li>
+
+					</ul>
+					
+				</div>
+				<div class="nav-bar-icons">
+					<div class="login">
+						<button type="button">Login</button>
+					</div>
+					<div class="shopping" id="shopping">
+				<img src="cart-arrow-down.png">
+				<span class="quantity" id="cart-view">0</span>
+			</div>
+				<a href="search.html"><img class="icon1" src="search.svg"></a>
+				<a href="user.html"><img class="icon1-user"  src="30576671_7705320.jpg"></a>
+				
+				</div>
+
+			</nav>
+		</div>
+		<div id="toastBox">
+
+		</div>
+
+
+
+		<div class="content-wrap" id="home">
+			<div class="contenth1">
+				<h1 class="desktop-h1">DISCOVER,<span>BUY</span><br>SELL <span>NFTS</span></h1>
+				<h1 class="mobile-h1">DISCOVER<br><span>BUY</span><br>SELL <span>NFTS</span></h1>
+				<div class="content-btn">
+					<a class="btn1" href="">Get Started</a>
+					<a class="btn2" href="">Learn more</a>
+					
+				</div>
+			</div>
+			<div class="content-img">
+				<img src="Picsart_23-06-16_14-56-59-422.png">
+			</div>
+		</div>
+	</section>
+
+
+
+<section class="Market" id="market">
+	<div class="marketh1"><h1>Marketplace</h1></div>
+	<div class="list" id="list"></div>
+	<div class="more"><a class="btn1" href="market.html">Browse All</a></div>
+</div>
+<div class="card">
+	<h1>Your Cart</h1>
+	<ul class="listCard"></ul>
+	<div class="checkOut">
+		<div class="totalP">
+			<div class="total-info"><h2>Total ($)</h2><div class="total">$0</div></div>
+		</div>
+		<div class="tax-info"><h2>Tax ($)</h2><div class="tax" id="tax">$0</div></div>
+		<div class="closeShopping" id="closeShopping"><p>Close Cart</p></div>
+	</div>
+	<div class="btn4"><a href="thanks.html"><button type="button">Checkout</button></a></div>
+</div>
+</section>
+	
+
+
+	</section>
+	<section class="about-container" id="about">
+		<div class="about">
+			<div class="h1">
+				<h1>Discover NFTS</h1>
+				<p>Discover a virtual world of nfts right from the comfort of your home and<br> without needing to spend extra.</p>
+				<div class="btn3-wrap">
+					<a class="btn3" href="">BUY NOW!</a>
+				</div>
+			</div>
+			<div class="about-img">
+				
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="news-wrap" id="contact">
+		<div class="news">
+			<img class="news-img" src="p0dph028.jpg">
+			<form>
+				<h2>NEWSLETTER</h2>
+				<input type="email" name="Email" placeholder="Email" required>
+				<input type="text" name="Number" placeholder="Mobile Number" maxlength="11">
+			</form>
+		</div>
+	</section>
+
+
+
+	<footer>
+		<section class="footer">
+		<div class="row">
+			<div class="col">
+				<img class="logo" src="Picsart_23-06-18_19-12-00-677.png">
+				<p>Cybershop offer a wide range of products and services to customers around the world ensuring they get satisfied!Cybershop offer a wide range of products and services to customers around the world ensuring they get satisfied!</p>
+			</div>
+			<div class="col">
+				<h3>office</h3>
+				<p>ITPL road</p>
+				<p>Metaverse Avenue, Bangkok</p>
+				<p class="Email-id">cybershop1@gmail.com</p>
+				<h4>+234 - 07672976898</h4>
+			</div>
+			<div class="col">
+				<h3>links</h3>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Coins</a></li>
+					<li><a href="">Market</a></li>
+					<li><a href="">About us</a></li>
+					<li><a href="">Customer care</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Socials</h3>
+				<div class="social-icons2">
+					<a href=""><img src="youtube.png"></a>
+					<a href=""><img src="twitter.png"></a>
+					<a href=""><img src="instagram.png"></a>
+					
+				</div>
+			</div>
+			
+		</div>
+		
+	</section>
+	</footer> 
+
+	
+<script>
+
+<!----Javascript for popUp message-->
+
+	var modalBox = document.getElementById('modalbox');
+	function showModal(){
+		setTimeout(() => {
+			modalBox.style.display = 'block'
+		}, 4000);
+		hideCart();
+	};
+	function closeModal(){
+		modalBox.style.display = 'none'
+	};
+
+//----Javascript for cartvisibilty-----//
+
+	var cartView = document.getElementById('cart-view');
+	function showCart(){
+		cartView.style.display = 'block'
+	};
+	function hideCart(){
+		cartView.style.display = 'none'
+	};
+
+	//--Javascript for toggle menu--//
+
+	var navLinks = document.getElementById('navLinks');
+	function showMenu(){
+		navLinks.style.left = '0';
+	}
+    function hideMenu(){
+		navLinks.style.left = '-200px';
+	}
+</script>
+<script src="app.js"></script>
+</body>
+</html>

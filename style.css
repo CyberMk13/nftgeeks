@@ -1,0 +1,86 @@
+body{
+	font-family: arial;
+}
+.container{
+	width: 1000px;
+	margin:auto;
+	transition: 0.5s;
+}
+
+header{
+	display: grid;
+	grid-template-columns: 1fr 50px;
+	margin-top: 50px;
+}
+header .shopping{
+	position: relative;
+	text-align: right;
+}
+header .shopping img{
+	width: 40px;
+}
+header .shopping span{
+	background: red;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: absolute;
+	top: -5px;
+	left: 80%;
+	padding: 3px 10px;
+}
+.list{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 20px;
+	grid-row-gap: 20px;
+	margin-top: 50px;
+}
+
+
+.card .checkOut div{
+	width: 100%;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+.card .checkOut .totalP .total-info{
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+
+.totalP{
+	display: block;
+}
+.total-info h2{
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	display: flex;
+	width: 300px;
+}
+.tax-info h2{
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	display: flex;
+	width: 300px;
+	font-size: 17px;
+}
+.card .checkOut .total{
+	background: white;
+	color: black;
+}
+.active .card{
+	left: calc(100% - 500px);
+}
+.active .container{
+	transform: translateX(-200px);
+}
